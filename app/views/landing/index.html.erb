@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Home page Bootstrap</title>
+	<style>
+		#main-div	{
+			width: 30%;
+			height: 100%;
+			background-color: white;
+			text-align: center;
+			font-size: 5rem;
+			padding-bottom: : 10px;
+			margin-left: 40%;
+		}
+	</style>
+</head>
+<body background="/background-image.jpg">
+	<div class="container">
+		<div class="jumbotron">			
+			<h3>Welcome to our site. Follow the links to proceed!</h3>			
+		</div>
+		<div id="main-div">
+			<%= link_to "Album", :controller => :album, :action => :index %>
+		</div>
+		<br>
+		<div id="main-div">
+			<%= link_to "Blog", :controller => :blog, :action => :index %>
+		</div>
+		<br>
+		<div id="main-div">
+			<%= link_to "Carousel", :controller => :carousel, :action => :index %>
+		</div>
+		<br>
+		<div id="main-div">
+			<%= link_to "Checkout", :controller => :checkout, :action => :index %>
+		</div>
+		<br>
+		<div id="main-div">
+			<%= link_to "Cover", :controller => :cover, :action => :index %>
+		</div>
+		<br>
+		<div id="main-div">
+			<%= link_to "Dashboard", :controller => :dashboard, :action => :index %>
+		</div>
+		<br>
+		<div id="main-div">
+			<%= link_to "Grid", :controller => :grid, :action => :index %>
+		</div>
+		<br>
+		<div id="main-div">
+			<%= link_to "Jumbotron", :controller => :jumbotron, :action => :index %>
+		</div>
+		<br>
+		<div id="main-div">
+			<%= link_to "Pricing", :controller => :pricing, :action => :index %>
+		</div>
+		<br>
+		<div id="main-div">
+			<%= link_to "Product", :controller => :product, :action => :index %>
+		</div>
+		<br>
+	</div>
+</body>
+</html>
