@@ -1,67 +1,94 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Album example for Bootstrap</title>
-    <!-- Bootstrap core CSS -->
-    <link href="http://getbootstrap.com/docs/4.0/dist/css/bootstrap.min.css" rel="stylesheet">
+		<title>Album example for Bootstrap</title>
+		<!-- Bootstrap core CSS -->
+		<link href="http://getbootstrap.com/docs/4.0/dist/css/bootstrap.min.css" rel="stylesheet">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 	<title>Home page Bootstrap</title>
 	<style>
-		#main-div	{
-			width: 50%;
-			height: 100%;
-			background-color: white;
-			text-align: center;
-			font-size: 5rem;
-			padding-bottom: : 10px;
-			margin-left: 30%;
+		.nav-link {
+    color: #F5F5F5;
+    font-size: 0.8889em;
+    text-decoration: none;
+    font-weight: normal;
+    text-transform: uppercase;
+    border-bottom: 2px solid transparent;
+    padding-bottom: 0.125em;
+    transition: border-bottom-color 50ms linear 0s;
+		}
+		.nav-link:hover, .nav-link.active {
+		    border-bottom-color: #FFF;
 		}
 	</style>
 </head>
 <body background="/background-image.jpg">
 	<div class="container">
-		<div class="jumbotron">
-			<h3>Welcome to our site. Follow the links to proceed!</h3>
-		</div>
-		<div id="main-div">
-			<%= link_to "Album", :controller => :album, :action => :index %>
-		</div>
-		<br>
-		<div id="main-div">
-			<%= link_to "Blog", :controller => :blog, :action => :index %>
-		</div>
-		<br>
-		<div id="main-div">
-			<%= link_to "Carousel", :controller => :carousel, :action => :index %>
-		</div>
-		<br>
-		<div id="main-div">
-			<%= link_to "Checkout", :controller => :checkout, :action => :index %>
-		</div>
-		<br>
-		<div id="main-div">
-			<%= link_to "Cover", :controller => :cover, :action => :index %>
-		</div>
-		<br>
-		<div id="main-div">
-			<%= link_to "Dashboard", :controller => :dashboard, :action => :index %>
-		</div>
-		<br>
-		<div id="main-div">
-			<%= link_to "Grid", :controller => :grid, :action => :index %>
-		</div>
-		<br>
-		<div id="main-div">
-			<%= link_to "Jumbotron", :controller => :jumbotron, :action => :index %>
-		</div>
-		<br>
-		<div id="main-div">
-			<%= link_to "Pricing", :controller => :pricing, :action => :index %>
-		</div>
-		<br>
-		<div id="main-div">
-			<%= link_to "Product", :controller => :product, :action => :index %>
-		</div>
-		<br>
+		<nav class="navbar navbar-expand-lg navbar-dark bg-dark rounded">
+			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExample10" aria-controls="navbarsExample10" aria-expanded="false" aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+
+			<div class="collapse navbar-collapse justify-content-md-center" id="navbarsExample10">
+				<ul class="navbar-nav">
+					<li class="nav-item active">
+						<a class="nav-link" href="/album/index">Album <span class="sr-only">(current)</span></a>
+					</li>
+					<li class="nav-item active">
+						<a class="nav-link" href="/blog/index">Blog</a>
+					</li>
+					<li class="nav-item active">
+						<a class="nav-link" href="/carousel/index">Carousel</a>
+					</li>
+					<li class="nav-item active">
+						<a class="nav-link" href="/checkout/index">Checkout</a>
+					</li>
+					<li class="nav-item active">
+						<a class="nav-link" href="/cover/index">Cover</a>
+					</li>
+					<li class="nav-item active">
+						<a class="nav-link" href="/dashboard/index">Dashboard</a>
+					</li>
+					<li class="nav-item active">
+						<a class="nav-link" href="/grid/index">Grid</a>
+					</li>
+					<li class="nav-item active">
+						<a class="nav-link" href="/jumbotron/index">Jumbotron</a>
+					</li>
+					<li class="nav-item active">
+						<a class="nav-link" href="/pricing/index">Pricing</a>
+					</li>
+					<li class="nav-item active">
+						<a class="nav-link" href="/product/index">Product</a>
+					</li>
+				</ul>
+			</div>
+		</nav>
+
+		<main role="main">
+			<div class="jumbotron">
+				<div class="col-sm-8 mx-auto">
+					<h1>Bootstrap Templates</h1>
+					<p>This site is a depiction of different bootstrap templates integerated in a rails application.
+						It is built on <strong>Rails 5</strong> and <strong>Bootstrap 4</strong>. It contains 
+						following templates. 
+						<ul>
+							<li>Album</li>
+							<li>Blog</li>
+							<li>Carousel</li>
+							<li>Checkout</li>
+							<li>Cover</li>
+							<li>Dashboard</li>
+							<li>Grid</li>
+							<li>Jumbotron</li>
+							<li>Pricing</li>
+							<li>Product</li>
+						</ul>
+					</p>
+					<p>You can <strong>View</strong> any of the template by clicking the appropriate link on navbar located at top of the page!</p>
+				</div>
+			</div>
+		</main>
 	</div>
 </body>
 </html>
