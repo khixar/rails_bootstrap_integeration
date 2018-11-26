@@ -19,7 +19,7 @@ Rails.application.routes.draw do
 
   get 'pricing/index'
 
-  root :to => 'album#index'
+  root :to => 'landing#index'
   get 'album/index'
 
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
